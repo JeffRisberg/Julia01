@@ -13,3 +13,10 @@ for x = 1 : 1 : 10
         @printf("y %i\n", y)
     end
 end
+
+x = Dict("a"=>"A", "b"=>"B", "c"=>"C")
+
+for (key, value) in x
+    print(key); println(value)
+end
+
