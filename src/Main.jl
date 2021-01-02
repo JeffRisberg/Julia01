@@ -16,7 +16,7 @@ value = 4 / 3
 println(typeof(value))
 println(value)
 
-# Primitive functions on Numbers
+# Primitive functions on numbers
 println(floor(value))
 
 println(13 % 4)
@@ -31,6 +31,7 @@ println(tan(pi / 4))
 name = "Bruce Wayne"
 println(typeof(name))
 
+println(length(name))
 println(name[1:5])
 
 # Arrays
