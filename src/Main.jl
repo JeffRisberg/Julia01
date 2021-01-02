@@ -12,16 +12,20 @@ println(typeof(count))
 value = 5.5
 println(typeof(value))
 
-value = 4/3
+value = 4 / 3
 println(typeof(value))
 println(value)
 
 # Primitive functions on Numbers
-
 println(floor(value))
 
 println(13 % 4)
 println(mod(13,4))
+
+println(pi)
+println(sin(pi))
+println(cos(pi))
+println(tan(pi / 4))
 
 # Strings
 name = "Bruce Wayne"
