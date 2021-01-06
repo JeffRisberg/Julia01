@@ -44,6 +44,14 @@ for x in v
     println(x)
 end
 
+v = ["one", false, 23]
+println(typeof(v))
+append!(v, ["four"])
+
+for x in v
+    println(x)
+end
+
 # Dictionaries
 x = Dict("a" => "A", "b" => "B", "c" => "C")
 println(typeof(x))
@@ -63,7 +71,7 @@ for x in v
     println(x)
 end
 
-# Formated output
+# Formatted output
 using Printf
 
 value = 5.5
