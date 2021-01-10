@@ -77,8 +77,14 @@ using Printf
 value = 5.5
 @printf("value %f\n", value)
 
-
 # Control Structures
+
+x= 5
+if (x == 5)
+    println("x is 5")
+else
+    println("x is not 5")
+end
 
 for x = 1 : 1 : 10
     @printf("x %i\n", x)
