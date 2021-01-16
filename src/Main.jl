@@ -90,4 +90,15 @@ for x = 1 : 1 : 10
     @printf("x %i\n", x)
 end
 
+# Functions
 
+function canpaybills(bankbalance)
+    if bankbalance < 0
+       return false
+    else
+       return true
+    end
+end
+
+println(canpaybills(5))
+println(canpaybills(-5))
