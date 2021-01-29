@@ -33,6 +33,8 @@ println(typeof(name))
 
 println(length(name))
 println(name[1:5])
+println(name[7:end])
+
 
 # Arrays
 
