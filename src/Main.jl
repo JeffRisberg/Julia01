@@ -6,6 +6,7 @@ Main:
 =#
 
 # Numbers
+
 count = 5
 println(typeof(count))
 
@@ -17,6 +18,7 @@ println(typeof(value))
 println(value)
 
 # Primitive functions on numbers
+
 println(floor(value))
 
 println(13 % 4)
@@ -28,13 +30,13 @@ println(cos(pi))
 println(tan(pi / 4))
 
 # Strings
+
 name = "Bruce Wayne"
 println(typeof(name))
 
 println(length(name))
 println(name[1:5])
 println(name[7:end])
-
 
 # Arrays
 
@@ -55,6 +57,7 @@ for x in v
 end
 
 # Dictionaries
+
 x = Dict("a" => "A", "b" => "B", "c" => "C")
 println(typeof(x))
 
@@ -74,6 +77,7 @@ for x in v
 end
 
 # Formatted output
+
 using Printf
 
 value = 5.5
