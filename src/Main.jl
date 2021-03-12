@@ -108,3 +108,16 @@ end
 
 println(canpaybills(5))
 println(canpaybills(-5))
+
+# Pipe operator
+
+println([1:5;] |> sum)
+
+println([1:5;] |> x->x.^2 |> sum)
+
+println([1:5;] |> x->x.^2 |> sum |> inv)
+
+
+
+
+
