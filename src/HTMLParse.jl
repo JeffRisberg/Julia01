@@ -5,7 +5,7 @@ HTMLParse:
 - Date: 2021-03-11
 =#
 
-using Genie, Genie.Renderer, Gumbo
+using Genie, Genie.Renderer, Gumbo, DataStructures
 
 import Base.replace
 
@@ -27,6 +27,20 @@ const NORMAL_ELEMENTS = [ :html, :head, :body, :title, :style, :address, :articl
 const VOID_ELEMENTS   = [:base, :link, :meta, :hr, :br, :area, :img, :track, :param, :source, :input]
 const BOOL_ATTRIBUTES = [:checked, :disabled, :selected]
 
+
+const FILE_EXT      = ".flax.jl"
+const TEMPLATE_EXT  = ".flax.html"
+const JSON_FILE_EXT = ".json.jl"
+const MARKDOWN_FILE_EXT = ".md"
+
+const SUPPORTED_HTML_OUTPUT_FILE_FORMATS = [TEMPLATE_EXT, MARKDOWN_FILE_EXT]
+
+const HTMLString = String
+const JSONString = String
+
+task_local_storage(:__vars, Dict{Symbol,Any}())
+
+
 """
     read_template_file(file_path::String) :: String
 Reads `file_path` template from disk.
@@ -41,7 +55,6 @@ function read_template_file(file_path::String) :: String
 
   join(html, "\n")
 end
-
 
 
 """
@@ -143,6 +156,7 @@ function parse_tree(elem, output, depth; partial = true) :: String
   # @show output
   output
 end
+
 
 a = read_template_file("simple_page.html")
 println(a)
