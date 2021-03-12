@@ -117,7 +117,14 @@ println([1:5;] |> x->x.^2 |> sum)
 
 println([1:5;] |> x->x.^2 |> sum |> inv)
 
+# Replace function
 
+a = "All work and no play makes Jack a dull boy"
 
+println(replace(a, "work" => "WORK", count = 1))
+println(a)
+
+# b = replace(a, "work", "WORK")
+# println(b)
 
 
