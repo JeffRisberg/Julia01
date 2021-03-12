@@ -5,9 +5,14 @@
     <title>Title</title>
 </head>
 <body>
+TOP
+<ul>
 <% @foreach(@vars(:people)) do person %>
-<p>first line</p>
-<p>second line</p>
+   <li>$(person.first) $(person.last)</li>
+   <li>link to id: $(person.id)</li>
 <% end %>
+</ul>
+
+BOTTOM
 </body>
 </html>
