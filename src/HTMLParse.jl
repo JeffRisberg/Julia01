@@ -1,6 +1,6 @@
 #=
 HTMLParse:
-- Julia version: 1.6.0
+- Julia version: 1.6.2
 - Author: jeff
 - Date: 2021-03-11
 =#
