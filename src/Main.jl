@@ -119,12 +119,12 @@ println([1:5;] |> x->x.^2 |> sum |> inv)
 
 # Replace function
 
-a = "All work and no play makes Jack a dull boy"
+a = "The rain in Spain falls mainly on the plain"
 
-println(replace(a, "work" => "WORK", count = 1))
+println(replace(a, "Spain" => "Palo Alto", count = 1))
 println(a)
 
-# b = replace(a, "work", "WORK")
-# println(b)
+b = replace(a, "mainly" => "mostly")
+println(b)
 
 
